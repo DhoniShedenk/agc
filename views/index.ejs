@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>AGC Blogger Hacker UI</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>🕶️ AGC Blogger - Multi Keyword Mode</h1>
+    <form action="/generate" method="post">
+      <textarea name="keywords" placeholder="Masukkan beberapa keyword, pisahkan dengan baris baru..." rows="8" required></textarea>
+      <button type="submit">Generate & Post Semua</button>
+    </form>
+    <% if (message) { %>
+      <div class="message"><%= message %></div>
+    <% } %>
+  </div>
+</body>
+</html>
